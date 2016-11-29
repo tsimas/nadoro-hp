@@ -1,0 +1,57 @@
+.login-box-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -125px;
+    width: 250px;
+    height: 200px;
+}
+
+.error-messages-box-login {
+    visibility: hidden;
+    position: absolute;
+    z-index: 998; /* must be under the login modal */
+    opacity: 1;
+}
+
+.selection-component {
+    width: 100%;
+}
+
+.custom-select > a.dropdown-toggle {
+    @extend .form-control-xs;
+    @extend .xs-puller;
+}
+
+.custom-select.open > a.dropdown-toggle {
+    @extend .form-control-xs;
+    @extend .xs-puller;
+    line-height: inherit;
+}
+
+.custom-select > .dropdown-menu {
+    border: 1px solid #ccc;
+    border-radius: 1px !important;
+}
+
+.custom-select > .dropdown-menu > .custom-select-search > input {
+    @extend .form-control-xs;
+}
+
+.custom-select > .dropdown-menu > .custom-select-search:after {
+    top: 0;
+}
+
+.custom-select > .dropdown-menu > ul {
+    padding: 0;
+    list-style: none;
+}

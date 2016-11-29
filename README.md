@@ -1,2 +1,6 @@
-# nadoro-hp
-Nadoro angular 1 homepage
+Tasks are:
+
+- build
+- serve
+- run
+- test

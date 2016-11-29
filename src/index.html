@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-strict-di="true">
+    <head>
+        <title ng-bind="pageTitle">Nadoro</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Nadoro homepage">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/webp" href="favicon.webp" />
+        <base href="/">
+        <style>
+            /* This helps the ng-show/ng-hide animations start at the right place. */
+            /* Since Angular has this but needs to load, this gives us the class early. */
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], [ng-hide], .ng-cloak, .x-ng-cloak, .ng-hide {
+                display: none !important;
+            }
+        </style>
+
+        <link rel="stylesheet" href="vendor.css" />
+        <link rel="stylesheet" href="app.css">
+
+    </head>
+    <body ng-cloak ng-controller="AppController" class="nav-collapsed">
+        <div ss="well well-lg bs-loading-container" bs-loading-overlay>
+            <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+                your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div ui-view></div>
+
+            <script src="vendor.js"></script>
+            <script src="app.js"></script>
+            <script src="app.templates.js"></script>
+        </div>
+    </body>
+</html>

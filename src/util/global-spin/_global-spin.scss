@@ -1,0 +1,50 @@
+@keyframes judo-loader-spinner {
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes judo-loader-spinner {
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.judo-loader-spinner {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.judo-loader-spinner:before {
+  content: 'Loading…';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.judo-loader-spinner:not(:required):before {
+  content: '';
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $judo-font-color-alt3;
+  border-bottom-color: $judo-font-color-alt3;
+  animation: judo-loader-spinner .9s ease infinite;
+  -webkit-animation: judo-loader-spinner .9s ease infinite;
+}
+
+.spinner-loader-text {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  padding-top: 160px;
+  padding-right: 17px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: $judo-font-color-alt3;
+}

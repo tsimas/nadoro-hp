@@ -1,0 +1,29 @@
+# Ignore Node & Bower
+###################
+node_modules
+bower_components
+.tmp
+
+# Ignore Test reporters
+###################
+**/test/coverage
+reports
+test-results.xml
+coverage.xml
+
+# Ignore Web Storm #
+.idea
+
+# Packages #
+############
+*.zip
+
+# Logs and databases #
+######################
+
+# Project files #
+######################
+dist
+
+
+
